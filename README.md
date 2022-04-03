@@ -45,11 +45,22 @@ await getAccessToken()
 3. Extract the bot anywhere on your desktop
 4. Open a command prompt/terminal in this folder
     Windows: Shift+right mousebutton in the folder -> Click on "open Powershell here"
+    
     Mac: No clue, sorry!
-    Linux: Is this neccisary?
+    
+    Linux: Is this necessary?
 5. install the dependencies: `npm i`
-6. execute the bot `node bot.js ACCESS_TOKEN_HIER`
+6. execute the bot `node bot.js ACCESS_TOKEN_HERE`
 7. BONUS: You can repeat these steps for any amount of accounts you'd want. Keep in mind to use different accounts.
+
+# Docker alternative
+
+This option is mostly useful for people who are already using docker.
+
+It has been confirmed to run on x64(average desktop computer) and armv7(raspberry pi), but it should also be able to run on arm64(new apple computers).
+
+1. Install [Docker](https://docs.docker.com/get-docker/)
+2. Run this command: `docker run --pull=always --restart unless-stopped -it ghcr.io/placenl/placenl-bot ACCESS_TOKEN_HERE`
 
 -----
 
@@ -104,3 +115,11 @@ await getAccessToken()
 6. Voor de bot uit met `node bot.js ACCESS_TOKEN_HIER`
 7. BONUS: Je kunt de laatse twee stappen zo vaak doen als je wil voor extra accounts. Let wel op dat je andere accounts gebruikt anders heeft het niet heel veel zin.
 
+# Docker alternatief
+
+Dit alternatief is vooral geschikt voor iedereen die al docker gebruikt.
+
+Het is bevestigd dat het op x64(gemiddelde desktopcomputer) en armv7(raspberry pi) draait, maar het zou ook op arm64(nieuwe Apple-computers) moeten kunnen draaien.
+
+1. Installeer [Docker](https://docs.docker.com/get-docker/)
+2. Start dit command: `docker run --pull=always --restart unless-stopped -it ghcr.io/placenl/placenl-bot ACCESS_TOKEN_HIER`
